@@ -1,0 +1,155 @@
+@import "headlines";
+$privanza:#016A2D;
+$blanco:#FBFCFC;
+@font-face {
+    font-family: "OpenSans";
+    src: url("../font/OpenSans-Regular.ttf");
+  }
+@font-face {
+    font-family: "OpenSans200";
+    src: url("../font/OpenSans-Bold.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    
+}
+p{
+    font-family: OpenSans;
+}
+
+body{
+    font-family: OpenSans200;
+    
+}
+#index{
+    background-image: url(../img/backPrivanza.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    .header__bg{
+            position: relative;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+
+        }
+    .header__bg__text{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        
+    }
+    .header__text{
+
+        margin:20px auto;
+        
+        height: 80vh;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 3;
+        h5{
+            text-transform: uppercase;
+        }
+        
+            
+    }
+    
+}
+#sobreNosotros{
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    color: black;
+    h5{
+        color: black;
+    }
+    h3{
+        color: black;
+    }
+
+}
+#servicios{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .item--cobertura{
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+    }
+}
+.maps{
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    
+        
+    
+}
+#contacto{
+    color: black;
+    background-color:$privanza;
+}
+
+.contacto{
+    height: 500px;
+    width: 50vw;
+    position: relative;
+    background-color:rgba($color: #000000, $alpha: 0.8);
+    margin-left: 0;
+    padding: 50px;
+}
+@media only screen and (max-width:600px) {
+        .maps{
+            position: initial;
+            height: 100%;
+        }
+        .contacto{
+            position: initial;
+            padding: 15px;
+            width: 100vw;
+            text-align: center;
+        }
+        
+    }
+@media only screen and (min-width: 1280px){
+    .header__text{
+        margin: 0 auto;
+        max-width: 60%;
+        h2{
+            font-size: 5em;
+        }
+    }
+    .header__bg__text{
+        justify-content: center;
+        text-align: center;
+    }
+}
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:45px;
+    right:100px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+}
+
+.whatsapp-icon {
+    margin-top:8px;
+}
